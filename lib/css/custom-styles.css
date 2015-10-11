@@ -1,0 +1,61 @@
+/*  code layout  */
+
+.split-container {
+  display: flex;
+}
+
+.reveal pre:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  color: white;
+  background-color: #586e75;
+}
+
+.split-container pre:first-of-type {
+  margin-right: 10px;
+}
+
+.split-container pre:last-of-type {
+  margin-left: 10px;
+}
+
+.reveal pre:first-of-type:after {
+  content: "es6";
+}
+
+.reveal pre:last-of-type:after {
+  content: "es5";
+}
+
+/* pre/code tweaks  */
+.reveal pre {
+  font-size: 0.4em;
+  background-color: #3f3f3f; /* to ensure consistent height looks good */
+}
+
+.reveal pre code {
+  padding: 10px;
+}
+
+.code-extra.es6 pre:after {
+  content: "es6" !important;
+}
+
+.code-extra.es5 pre:after {
+  content: "es5" !important;
+}
+
+
+/* general layout */
+.left-align {
+  text-align: left;
+}
+
+.reveal .small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
