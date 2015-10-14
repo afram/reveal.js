@@ -2,39 +2,25 @@
 Rules of Arrow Functions
 <!-- .element: class="small" -->
 
-<div class="split-container">
+<div class="code-extra es6">
 ```js
-// Empty arrow function returns undefined
-let empty = () => {};
+// Nicer looking, and more succinct style
+let odds = arrOfNumbers.filter(n => n % 2 !== 0);
 
-// Single param case needs no
-// parentheses around param list
-let identity = x => x;
+// The following are NOT allowed with arrow functions
 
-// No need for parentheses for expression body
-let square = x => x * x;
+// TypeError
+let IllegalConstructor = () => {};
+new IllegalConstructor;
 
-// Parenthesize the body to return an
-// object literal expression. More than one
-// param will require parentheses around param list
-let myObj = (key, val) => ({key, val})
+let unknownArgNumber = () {
+  // Can't use arguments keyword
+  let numberOfArgs = arguments.length;
+}
+
+// prototype not available on arrow functions
+myArrowFunc.prototype.someMethod = function() {}
 ```
-```js
-// Empty function -> returns undefined by default
-var empty = function() {};
-
-// Single param
-var identity = function(x) { return x; };
-
-// square equivalent
-var square = function(x) { return x * x; };
-
-// return an object literal in es5
-var myObj = function(key, val) { return {key: val} };
-```
-
-
-
 
 Note:
 - Identical to a function except for following

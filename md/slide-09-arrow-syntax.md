@@ -11,7 +11,7 @@ let empty = () => {};
 // parentheses around param list
 let identity = x => x;
 
-// No need for parentheses for expression body
+// No need for parentheses for expression statement body
 // if single expression
 let cube = x => x * x * x;
 
@@ -20,8 +20,9 @@ let cube = x => x * x * x;
 // param will require parentheses around param list
 let myObj = (key, val) => ({key, val})
 
-let myArr = (x, y) => {
-
+// Must use return statement when using curly braces
+let myArr = () => {
+  return [1, 2, 3];
 }
 ```
 ```js
@@ -29,19 +30,30 @@ let myArr = (x, y) => {
 var empty = function() {};
 
 // Single param
+// must use parentheses
 var identity = function(x) { return x; };
 
 // cube equivalent
+// must use return statement
 var cube = function(x) { return x * x * x; };
 
 // return an object literal in es5
+// no need to use parentheses
+// around object literal
 var myObj = function(key, val) { return {key: val} };
+
+// Always have to explicitly return in classic functions
+function myArr() {
+  return [1, 2, 3];
+}
 ```
 
 Note:
-- JavaScript is lexically scoped for the most part, however the binding of the 'this' keyword could be set dynamically at run time.
+- JavaScript is lexically scoped, however the binding of the 'this' keyword can be set dynamically at run time.
 
 - Arrow functions bind 'this' to the lexical scope they are created.
+
+- Support statement block bodes and expression statement bodies.
 
 - The last line or result of expression is automatically returned
 
