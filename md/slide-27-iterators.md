@@ -2,7 +2,7 @@
 Iterator objects enable custom iteration like Java Iterable
 <!-- .element: class="small" -->
 
-<div class="code-extra es6">
+<div class="split-container">
 ```js
 let fibonacci = {
     [Symbol.iterator]() {
@@ -22,12 +22,10 @@ for (let n of fibonacci) {
     console.log(n)
 }
 ```
-
-Iteration is based on these duck-typed interfaces
-<!-- .element: class="small" -->
-
-<div class="code-extra es6">
 ```js
+// Iteration is based on these
+// duck-typed interfaces
+
 interface IteratorResult {
   done: boolean;
   value: any;
