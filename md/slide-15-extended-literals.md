@@ -1,5 +1,5 @@
 ##Extended Literals
-10 kinds of people in this world. Those that know binary, and those that don't
+There are 10 kinds of people in this world. Those that know binary, and those that don't.
 <!-- .element: class="small" -->
 
 <div class="split-container">

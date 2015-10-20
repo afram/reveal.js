@@ -3,12 +3,17 @@
 
 <div class="small">
 - **let**: syntactically similar to *var*, but defines a variable in the current block
-- **function**: allow *function* declarations in nested blocks
 - **const**: like *let*, but for read-only constant declarations
 
-Note:
-- A quick breakdown of the difference between function scoping and block scoping.
-Before es6, only function scope existed - so, you would have to create a new function in order to create a closure
+- ( **function**: allow *function* declarations in nested blocks )
 
-- Have to deal with hoisting in function scope, whereas block scoped variables are NOT hoisted.
-- We will see in a moment how that allows us to write cleaner code.
+Note:
+- introduces 2 new keywords
+
+- won't touch on 'function' as identical in usage to let
+
+- difference between function scoping and block scoping.
+
+- only function scope
+
+- Hoisting in function scope

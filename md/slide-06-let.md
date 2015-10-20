@@ -1,5 +1,5 @@
-##let: A better *var*
-Using let in place of var makes it easier to define block-local variables without worrying about them clashing with variables elsewhere in the same function body.
+##let
+A better var
 <!-- .element class="small" -->
 
 ```js
@@ -28,6 +28,6 @@ function f(x) {
 Note:
 - LET is basically a better VAR
 
-- You can reuse variable names for more concise code - where it makes sense
+- Using let in place of var makes it easier to define block-local variables without worrying about them clashing with variables elsewhere in the same function body.
 
-- es6 example uses destructuring to import the methods on the Math object. Will touch on it more later
+- es6 example uses destructuring to import the methods on the Math object.

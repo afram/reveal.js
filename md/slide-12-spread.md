@@ -35,3 +35,10 @@ Array.prototype.push.apply(arr1, arr2);
 ```
 
 Note:
+- Spread enables some new tricks
+
+- can use with array literals
+
+- use with the 'new' keyword to instantiate new objects
+
+- a nicer way to concatenate 2 arrays

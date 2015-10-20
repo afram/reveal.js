@@ -18,3 +18,10 @@
 - New Built in Methods
 - Promises
 - Proxies/Reflection
+
+Note:
+- Now called es2015
+
+- changed in January of this year
+
+- es6 sounds cooler though...

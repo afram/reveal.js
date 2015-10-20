@@ -1,5 +1,5 @@
 ##Symbols
-Unqiue and Immutable
+Unique and Immutable
 <!-- .element: class="small" -->
 
 <div class="code-extra es6">
