@@ -18,18 +18,16 @@ Object.defineProperty(typeof global === "object" ? global : window, "ROOT_2", {
 ```js
 // CONST BLOCK SCOPING EXAMPLE
 
-// define PI constant
-const PI = 3.14159;
-
-function newPI() {
-  // new Block scoped constant
-  const PI = 4;
-  console.log(PI);
+{
+  // define PI constant
+  const PI = 3.14159;
+  console.log(PI); // 3.14159
+  {
+    const PI = 4;
+    console.log(PI); // 4
+  }
+  console.log(PI); // 3.14159
 }
-
-console.log(PI); // 3.14159
-newPI(); // 4
-console.log(PI); // 3.14159
 ```
 
 Note:

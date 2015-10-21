@@ -3,25 +3,29 @@ A better var
 <!-- .element class="small" -->
 
 ```js
-function log(msg) { ... }
-
-function f(x) {
-    if (...) {
-        let { log, sin, cos } = Math;
-        ... log(x) ...
-    }
-    log("done computing f()");
+{
+  let name = 'Bob';
+  console.log(name); // Bob
+  {
+    // does not affect outer block scope
+    let name = 'not Bob';
+    console.log(name); // not Bob
+  }
+  console.log(name); // Bob
 }
 ```
 ```js
-function log(msg) { ... }
+{
+  var name = 'Bob';
+  console.log(name); // Bob
 
-function f(x) {
-    var mathLog = Math.log;
-    if (...) {
-        ... mathLog(x) ...
-    }
-    log("done computing f()");
+// must wrap in a function to create new scope
+  (function() {
+    var name = 'not Bob';
+    console.log(name); // not Bob
+  })();
+
+  console.log(name); // Bob
 }
 ```
 

@@ -18,7 +18,6 @@ let fibGen = fibonacci();
 fibGen.next(); // { value: 1, done: false }
 fibGen.next(); // { value: 2, done: false }
 
-
 // Can use For..Of on generators
 for(let x of fibGen) {
   if (x > 1000) {
@@ -29,8 +28,6 @@ for(let x of fibGen) {
 // 1, 2, 3, 5, 8...
 ```
 Note:
-- An easier way to create iterators
-
 - defined with 'star'
 
 - generators can be halted

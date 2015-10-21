@@ -9,8 +9,8 @@ let odds = arrOfNumbers.filter(n => n % 2 !== 0);
 
 // The following are NOT allowed with arrow functions
 
-// TypeError
 let IllegalConstructor = () => {};
+// TypeError
 new IllegalConstructor;
 
 let unknownArgNumber = () {
@@ -18,7 +18,7 @@ let unknownArgNumber = () {
   let numberOfArgs = arguments.length;
 }
 
-// prototype not available on arrow functions
+// prototype not available - can't do this
 myArrowFunc.prototype.someMethod = function() {}
 ```
 
