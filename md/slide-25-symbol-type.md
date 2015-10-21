@@ -30,3 +30,5 @@ Note:
 - Can have an optional description, though only used for debugging.
 
 - they are unique, but not private as can be reflected through getOwnPropertySymbols
+
+- Number of Built-in Symbols also available
