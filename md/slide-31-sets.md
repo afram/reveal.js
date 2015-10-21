@@ -11,13 +11,13 @@ s.add( x );
 s.add( y );
 s.add( x );
 
-s.size;                         // 2
+s.size; // 2
 
 s.delete( y );
-s.size;                         // 1
+s.size; // 1
 
 s.clear();
-s.size;                         // 0
+s.size; // 0
 ```
 Note:
 - Collection of unique values (duplicates are ignored).

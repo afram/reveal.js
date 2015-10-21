@@ -59,3 +59,7 @@
   line-height: 1.2em;
   vertical-align: top;
 }
+
+.split-container.es6 pre:after {
+  content: "es6" !important;
+}
