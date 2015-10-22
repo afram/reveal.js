@@ -27,7 +27,7 @@ export default function(x) {
 ```
 ```js
 //commonjs es5 equivalent
-modules.exports.sum = function(x, y) {
+module.exports.sum = function(x, y) {
   return x + y;
 };
 module.exports.pi = 3.141593;

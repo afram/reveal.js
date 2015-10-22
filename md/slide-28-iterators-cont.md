@@ -20,3 +20,6 @@ for (let idx in arr) {
 ```
 
 Note:
+- For..Of iterates over values
+
+- can be used with arrays

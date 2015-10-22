@@ -16,7 +16,7 @@ dst.baz  === 4
 [ 1, 3, 4, 2 ].find(x => x > 3) // 4
 
 // String repeating
-"foo".repeat(3)
+"foo".repeat(3) // foofoofoo
 
 // String Searching
 "hello".startsWith("ello", 1) // true
@@ -58,6 +58,7 @@ Note:
 
 - Array Element finding
   - returns first match
+  - undefined if no match
 
 - String repeating
 

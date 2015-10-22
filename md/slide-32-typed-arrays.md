@@ -37,15 +37,13 @@ view16[0]; // 3340
 Note:
 - providing structured access to binary data using array-like semantics
 
-- Type in the name refers to the 'view'
-
-- create a bucket of bits (buffer), then view it using a typed array
-
 - Implement:
   - network protocols
   - cryptography algorithms
   - file format manipulations
   - Audio processing
+
+- create a bucket of bits (buffer), then view it using a typed array
 
 - Endianness
   - mapped to platform JS is running on

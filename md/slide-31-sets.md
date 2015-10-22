@@ -13,6 +13,8 @@ s.add( x );
 
 s.size; // 2
 
+s.has( x ) // true
+
 s.delete( y );
 s.size; // 1
 

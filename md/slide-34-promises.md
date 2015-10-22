@@ -20,8 +20,8 @@ asyncAction()
 ```
 
 Note:
--
-- Native support for Promises
+- Not new
+  - Native support for Promises
 
 - Follows Promises A+ Spec
 
