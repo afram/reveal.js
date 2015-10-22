@@ -17,7 +17,7 @@
 - Map/Set WeakMap/WeakSet
 - New Built in Methods
 - Promises
-- Proxies/Reflection
+- Honourable Mentions
 
 Note:
 - Now called es2015
