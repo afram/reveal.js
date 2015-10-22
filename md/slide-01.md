@@ -1,5 +1,5 @@
 <!-- .slide: data-background="" -->
-#es6 (& es7)
+#es6 (& nearly no es7)
 Collated and presented by Marwan Butrous <!-- .element: class="small" -->
 
 Note:

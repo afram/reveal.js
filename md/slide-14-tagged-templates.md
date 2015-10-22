@@ -24,7 +24,7 @@ function tag(strings, ...values) {
 tag`string text line 1 \n string text line 2`;
 
 // Also available on the String Object
-String.raw`Hi\n${2+3}!`; // "Hi\\n5!"
+String.raw`Hi \n ${2+3}!`; // "Hi \\n 5!"
 ```
 
 Note:
@@ -35,6 +35,8 @@ Note:
 - First param is array of strings in the template string
 
 - Second and every other param are values of processed substitution expressions
+
+- Raw property allows access to strings as they were entered
 
 - Conceivable to use this for Internationalisation
 

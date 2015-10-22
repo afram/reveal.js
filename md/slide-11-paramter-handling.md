@@ -19,11 +19,9 @@ function f(x, ...y) {
 f(3, 'foo', true) === 6
 
 // spread
-function f(x, y, z) {
-  return x + y + z;
-}
-// Pass each elem of array as argument
-f(...[1,2,3]) === 6
+function f(v, w, x, y, z) { }
+let args = [0, 1];
+f(-1, ...args, 2, ...[3]);
 ```
 ```js
 // must check for valid value of 'y'
@@ -42,14 +40,16 @@ function f() {
 f(3, 'foo', true) === 6
 
 // 'spread'
-function f(x, y, z) {
-  return x + y + z;
-}
-f.apply(null, [1, 2, 3]) === 6;
+function f(v, w, x, y, z) { }
+var arr = [-1];
+var args = [0, 1];
+Array.prototype.push.apply(arr, args);
+arr.push(3, 2);
+f.apply(null, arr);
 ```
 
 Note:
-- Three new ways of handling function parameters
+- Three new operators for handling function parameters
   - Default
   - Rest
   - Spread

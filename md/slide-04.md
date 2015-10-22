@@ -1,4 +1,4 @@
-####Topics to cover: es7 (draft and above)
+####es7 features (draft and above)
 
 <div class="small">
 - Exponentiation Operator
